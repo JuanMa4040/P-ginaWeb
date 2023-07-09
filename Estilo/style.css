@@ -1,0 +1,27 @@
+body {
+	background: rgb(243, 188, 7);
+	background-image: linear-gradient(to right, blue, green);
+}
+
+@keyframes wave {
+
+	0% {
+		background-position: 0% 50%;
+	}
+	
+	50% {
+		background-position: 100% 50%;
+	}
+	
+	100% {
+		background-position: 0% 50%;
+	}
+	}
+
+div {
+	width: 200px;
+	height: 200px;
+	background-image: linear-gradient(to right, rgb(235, 95, 15), rgb(0, 128, 111));
+	background-size: 200% auto;
+	animation: wave 10s linear infinite;
+}
