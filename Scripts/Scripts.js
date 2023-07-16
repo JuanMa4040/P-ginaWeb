@@ -1,3 +1,5 @@
+alert("Hola soquetes");
+
 function saludar(nombre) {
 
 console.log("No de nuevo decía");
@@ -8,7 +10,7 @@ return a + b;
 }
 const fn = () => {
     const miString ="soy un string"
-    let b = miString + "muy feliz"
+    let b = miString + " muy feliz"
     console.log(b)
 }
 fn()

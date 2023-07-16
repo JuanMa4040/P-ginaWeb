@@ -1,29 +1,46 @@
 body {
-	background: rgb(243, 188, 7);
-	background-image: linear-gradient(to right, rgb(177, 177, 202), rgb(70, 180, 70));
-}
+	background-image: url("../images/camara.jfif"); 
+	opacity: 0.5; 
+	background-size: cover;
+	background-position: left;
+	position: ;
+	background-opacity: 50%;
+	animation: moverFondo 10s linear infinite;
 
-@keyframes wave {
+@keyframes moverFondo {
 
 	0% {
-		background-position: 0% 50%;
-	}
-	
-	50% {
-		background-position: 100% 50%;
+		background-position: 0 0;
 	}
 	
 	100% {
-		background-position: 0% 50%;
+		background-position: 100% 0;
 	}
-	}
+	
+
+	
+}	
+
+body::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: white;
+		
+		
+
+
+
 
 div {
 	width: 200px;
 	height: 200px;
 	background-image: linear-gradient(to right, rgb(235, 95, 15), rgb(0, 128, 111));
 	background-size: 200% auto;
-	animation: wave 1s linear infinite;
+	opacity: 50%;
 }
 button {
 	color: blueviolet;
@@ -40,4 +57,15 @@ p {
 }
 h1 {
 height: 20vh;
+}
+.mi-button {
+	background-color: grey;
+	border: 3px;
+	color: green
+	padding: 10px 20px
+	text-align: center;
+	display: inline-block;
+	font-size: 16px
+	margin: 10px;
+	cursor: pointer;
 }
